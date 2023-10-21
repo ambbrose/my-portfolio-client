@@ -12,7 +12,7 @@ interface ProjectListProps {
 const ProjectList: React.FC<ProjectListProps> = ({ data }) => {
 
     return (
-        <>
+        <div>
             {data.length < 1 && <NoResult />}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10 mt-5">
@@ -24,7 +24,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ data }) => {
                     />
                 ))}
             </div>
-        </>
+        </div>
     );
 };
 
