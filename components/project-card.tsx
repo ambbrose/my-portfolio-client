@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import { motion } from "framer-motion";
-import { EyeIcon, Info, LinkIcon, GithubIcon } from "lucide-react";
+import { Info, LinkIcon, GithubIcon } from "lucide-react";
 import { Project } from "@/types";
 import { fadeIn } from "@/lib/utils";
 import Image from "next/image";

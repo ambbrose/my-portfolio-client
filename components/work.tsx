@@ -21,12 +21,12 @@ const Work: React.FC<WorkProps> = ({ projects }) => {
 
     return (
         <SectionWrapper idName="work">
-            <motion.div variants={textVariant(1)}>
+            {/* <motion.div variants={textVariant(1)}> */}
                 <Heading
                     title="Projects"
                     description="My work"
                 />
-            </motion.div>
+            {/* </motion.div> */}
 
             <div className="w-full flex">
                 <motion.p
