@@ -1,15 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
-
-import { fadeIn, textVariant } from "@/lib/utils";
 import Heading from "@/components/ui/heading";
 import SectionWrapper from "@/hoc/sectionWrapper";
 import { Project } from "@/types";
 
 import Link from "next/link";
 import ProjectList from "./project-list";
-
 
 interface WorkProps {
     projects: Project[];

@@ -2,10 +2,8 @@
 
 import { useState } from 'react';
 
-import { motion } from "framer-motion";
 import { Info, LinkIcon, GithubIcon } from "lucide-react";
 import { Project } from "@/types";
-import { fadeIn } from "@/lib/utils";
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -37,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project }) => {
     const showInfoIcon = project.description && (
         <div
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            onClick={() => setShowModal(true)}
+            onClick={openModal}
         >
             <Info size={20} />
         </div>
@@ -63,8 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project }) => {
                 />
             )}
 
-            <motion.div
-                variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+            <div
                 className="bg-neutral-900 border rounded-xl group p-3 space-y-4"
             >
                 <div className="aspect-square bg-gray-100 rounded-xl relative">
@@ -97,7 +94,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project }) => {
                         {linkText}
                     </Link>
                 </div>
-            </motion.div>
+            </div>
         </>
     );
 };
