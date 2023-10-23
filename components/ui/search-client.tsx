@@ -16,7 +16,7 @@ const SearchClient: React.FC<SearchClientProps> = ({ searchResult, searchParam }
     return (
         <div className="px-10 pb-10 pt-0">
             <h1 className="p-10 text-2xl text-blue-500 font-bold w-full items-center justify-center flex">
-                Search Result For: {searchParam}
+                Search Result For: "{searchParam}"
             </h1>
 
             <div className="flex flex-row">
