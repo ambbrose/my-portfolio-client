@@ -39,7 +39,7 @@ const PaginationControls: React.FC<PaginationControlsProps> = ({ hasNextPage, ha
                 Previous
             </Button>
 
-            <p className="text-xl sm:text-2xl">
+            <p className="text-xs sm:text-sm">
                 page {currentPage} of {Math.ceil(count / Number(per_page))}
             </p>
 
